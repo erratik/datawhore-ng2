@@ -15,12 +15,16 @@
       "main": "main.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
-      "prefix": "app",
+      "prefix": "datawhore",
       "mobile": false,
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/semantic-ui/dist/semantic.min.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/semantic-ui/dist/semantic.min.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
@@ -41,7 +45,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "less",
     "prefixInterfaces": false,
     "inline": {
       "style": false,
